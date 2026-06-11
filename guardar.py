@@ -5,7 +5,8 @@ import sys
 if len(sys.argv) < 2:
     mensaje = "Actualización"
 else:
-    mensaje = sys.argv[1]
+    # Une todos los argumentos en un solo mensaje
+    mensaje = " ".join(sys.argv[1:])
 
 try:
     # git add .
